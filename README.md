@@ -58,3 +58,11 @@ Edita `data/publications.json`. Ejemplo:
 ```
 
 Cada nueva publicación se añade como otro bloque dentro de la lista.
+
+
+## ORCID configurado
+
+Este paquete ya incorpora el ORCID:
+
+- 0009-0008-2470-1369
+- https://orcid.org/0009-0008-2470-1369
