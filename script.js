@@ -29,6 +29,7 @@ function applyLanguage(lang) {
   langToggle.textContent = lang === "es" ? "EN" : "ES";
   localStorage.setItem("preferredLanguage", lang);
   renderPublications();
+  renderWorkingPapers();
 }
 
 langToggle?.addEventListener("click", () => {
@@ -91,5 +92,61 @@ function renderPublications() {
   }).join("");
 }
 
+let workingPapers = [];
+
+async function loadWorkingPapers() {
+  try {
+    const response = await fetch("data/working-papers.json", { cache: "no-store" });
+    if (!response.ok) throw new Error("No se pudo cargar working-papers.json");
+    workingPapers = await response.json();
+  } catch (error) {
+    workingPapers = [];
+    console.warn(error);
+  }
+  renderWorkingPapers();
+}
+
+function renderWorkingPapers() {
+  const container = document.getElementById("working-papers-list");
+  if (!container) return;
+
+  if (!workingPapers.length) {
+    container.innerHTML = `
+      <div class="empty-state">
+        <p>${currentLang === "es"
+          ? "No hay trabajos en curso disponibles."
+          : "No working papers are currently available."}</p>
+      </div>`;
+    return;
+  }
+
+  container.innerHTML = workingPapers.map(item => {
+    const title = item.title?.[currentLang] || item.title?.es || "";
+    const description = item.description?.[currentLang] || item.description?.es || "";
+    const status = item.status?.[currentLang] || item.status?.es || "";
+    const type = item.type?.[currentLang] || item.type?.es || "";
+    const updated = item.updated?.[currentLang] || item.updated?.es || "";
+    const updatedLabel = currentLang === "es" ? "Actualizado" : "Updated";
+    const typeLabel = currentLang === "es" ? "Tipo" : "Type";
+
+    return `
+      <article class="working-paper">
+        <div class="working-paper-top">
+          <div>
+            <p class="project-tag">WORKING PAPER</p>
+            <h3>${title}</h3>
+            ${description ? `<p>${description}</p>` : ""}
+          </div>
+          <span class="status-badge">${status}</span>
+        </div>
+        <div class="working-paper-meta">
+          ${type ? `<span><strong>${typeLabel}:</strong> ${type}</span>` : ""}
+          ${updated ? `<span><strong>${updatedLabel}:</strong> ${updated}</span>` : ""}
+        </div>
+      </article>`;
+  }).join("");
+}
+
 applyLanguage(currentLang);
 loadPublications();
+loadWorkingPapers();
