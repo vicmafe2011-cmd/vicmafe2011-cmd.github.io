@@ -66,3 +66,21 @@ Este paquete ya incorpora el ORCID:
 
 - 0009-0008-2470-1369
 - https://orcid.org/0009-0008-2470-1369
+
+
+## Working Papers
+
+La sección `Working Papers` se actualiza editando:
+
+`data/working-papers.json`
+
+Estados recomendados:
+
+- `En preparación / In preparation`
+- `Manuscrito completado / Completed manuscript`
+- `Preparando envío / Preparing submission`
+- `En evaluación / Under review`
+- `Aceptado, pendiente de publicación / Forthcoming`
+- `Publicado / Published`
+
+No debe utilizarse `Under review` hasta que el manuscrito haya sido enviado formalmente y la revista haya confirmado que está en evaluación.
