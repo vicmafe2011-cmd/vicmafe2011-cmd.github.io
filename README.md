@@ -101,3 +101,18 @@ Se ha corregido el orden de inicialización de JavaScript para que la sección
 - Estado editorial mostrado:
   `Enviado a SCIO · Pendiente de evaluación editorial`.
 - Se añadió control de caché para que GitHub Pages muestre antes los cambios.
+
+
+## Actualización v2.5 - perfil OSF
+
+Se ha incorporado el perfil público de OSF:
+
+`https://osf.io/user/jkeu6`
+
+Cambios:
+
+- Enlace OSF en la cabecera social.
+- Enlace OSF en la sección de contacto.
+- Relación de identidad mediante `rel="me"`.
+- Datos estructurados `Person` de Schema.org con ORCID, GitHub y OSF.
+- Actualización de caché de estilos y JavaScript.
