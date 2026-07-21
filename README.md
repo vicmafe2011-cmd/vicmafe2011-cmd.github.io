@@ -84,7 +84,6 @@ Estados recomendados:
 - `Publicado / Published`
 
 No debe utilizarse `Under review` hasta que el manuscrito haya sido enviado formalmente y la revista haya confirmado que está en evaluación.
-<<<<<<< HEAD
 
 
 ## Corrección v2.3
@@ -92,5 +91,3 @@ No debe utilizarse `Under review` hasta que el manuscrito haya sido enviado form
 Se ha corregido el orden de inicialización de JavaScript para que la sección
 `Working Papers` cargue correctamente su contenido desde
 `data/working-papers.json`.
-=======
->>>>>>> 82d324090dbba160a3f0009cca203a8f748ee9c8
