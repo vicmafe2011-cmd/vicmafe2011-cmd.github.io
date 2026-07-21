@@ -92,16 +92,38 @@ function renderPublications() {
   }).join("");
 }
 
-let workingPapers = [];
+let workingPapers = [
+  {
+    title: {
+      es: "Inteligencia artificial, cognición distribuida y pensamiento social cristiano",
+      en: "Artificial Intelligence, Distributed Cognition and Catholic Social Thought"
+    },
+    status: {
+      es: "Enviado a SCIO · Pendiente de evaluación editorial",
+      en: "Submitted to SCIO · Awaiting editorial assessment"
+    },
+    type: {
+      es: "Artículo de investigación",
+      en: "Research article"
+    },
+    updated: {
+      es: "Julio de 2026",
+      en: "July 2026"
+    },
+    description: {
+      es: "Análisis filosófico de la externalización cognitiva y de la organización política de las infraestructuras de inteligencia artificial, en diálogo con la antropología filosófica y el pensamiento social cristiano.",
+      en: "A philosophical analysis of cognitive externalization and the political organization of artificial-intelligence infrastructures, in dialogue with philosophical anthropology and Catholic social thought."
+    }
+  }
+];
 
 async function loadWorkingPapers() {
   try {
-    const response = await fetch("data/working-papers.json", { cache: "no-store" });
+    const response = await fetch("data/working-papers.json?v=2.4.0", { cache: "no-store" });
     if (!response.ok) throw new Error("No se pudo cargar working-papers.json");
     workingPapers = await response.json();
   } catch (error) {
-    workingPapers = [];
-    console.warn(error);
+    console.warn("Se utilizará el contenido integrado de Working Papers.", error);
   }
   renderWorkingPapers();
 }

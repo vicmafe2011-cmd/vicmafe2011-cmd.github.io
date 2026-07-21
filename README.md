@@ -91,3 +91,13 @@ No debe utilizarse `Under review` hasta que el manuscrito haya sido enviado form
 Se ha corregido el orden de inicialización de JavaScript para que la sección
 `Working Papers` cargue correctamente su contenido desde
 `data/working-papers.json`.
+
+
+## Actualización v2.4 — envío a SCIO
+
+- El Working Paper aparece directamente en el HTML como contenido de respaldo.
+- `script.js` incluye también los datos de respaldo.
+- `data/working-papers.json` conserva el sistema sencillo de actualización.
+- Estado editorial mostrado:
+  `Enviado a SCIO · Pendiente de evaluación editorial`.
+- Se añadió control de caché para que GitHub Pages muestre antes los cambios.
