@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vicmafe2011-cmd.github.io/sitemap.xml

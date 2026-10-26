@@ -16,22 +16,15 @@ Copia todos los archivos y la carpeta `data` en la raíz del repositorio:
 Después, en GitHub Desktop:
 
 1. Escribe un resumen del cambio.
-2. Pulsa **Commit to main**.
-3. Pulsa **Push origin**.
+2. Crea una rama de trabajo desde `main` y realiza el commit en esa rama.
+3. Publica la rama y abre un pull request contra `main` para revisión.
 
-## Añadir ORCID
+## Identidad académica
 
-Busca en `index.html` las dos apariciones de:
-
-`Pendiente de añadir`
-
-y sustituye la parte correspondiente por un enlace como este:
-
-```html
-<a href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener">
-  0000-0000-0000-0000
-</a>
-```
+El ORCID ya está configurado: `https://orcid.org/0009-0008-2470-1369`.
+Los enlaces de identidad en la cabecera, contacto y Schema.org deben mantenerse
+sincronizados con OSF (`https://osf.io/user/jkeu6`) y GitHub
+(`https://github.com/vicmafe2011-cmd`).
 
 ## Añadir una publicación
 
@@ -116,3 +109,20 @@ Cambios:
 - Relación de identidad mediante `rel="me"`.
 - Datos estructurados `Person` de Schema.org con ORCID, GitHub y OSF.
 - Actualización de caché de estilos y JavaScript.
+
+## Actualización v2.6 — SEO y autoría
+
+- Título SEO, descripción y Open Graph con la identidad de filósofo, investigador,
+  docente y autor; Schema.org `Person` con ORCID y líneas de investigación.
+- Sección `#libros` con los tres títulos de autoría, usando el diseño existente.
+  No se añaden fechas, editoriales, ISBN ni enlaces de compra sin confirmar.
+- Publicaciones académicas (`data/publications.json`), working papers
+  (`data/working-papers.json`), libros y proyectos educativos diferenciados.
+- `robots.txt` permite el rastreo y anuncia `sitemap.xml`, que incluye la URL
+  canónica de la página. Las secciones con fragmentos no son páginas adicionales.
+- `styles.css`, `script.js` y los archivos JSON mantienen su funcionamiento.
+
+Para revisar los cambios, sirve la carpeta con un servidor HTTP local y comprueba
+la navegación, el menú móvil, los idiomas ES/EN, los temas y la carga de ambos JSON.
+Revisa también `/robots.txt`, `/sitemap.xml` y el JSON-LD de `index.html`.
+Los cambios se proponen mediante `seo-v2-6` contra `main`, sin merge directo.
