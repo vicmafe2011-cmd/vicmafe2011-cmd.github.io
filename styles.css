@@ -288,3 +288,28 @@ h4 { font-size: 1.25rem; }
 .project-catalog summary { cursor: pointer; font-weight: 700; }
 .project-catalog summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 6px; }
 @media (max-width: 720px) { .digital-grid { grid-template-columns: 1fr; } }
+
+/* Keyboard focus and project metadata use the existing site palette. */
+a:focus-visible, button:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+.digital-card { min-width: 0; overflow-wrap: anywhere; }
+.digital-card .publication-links a { padding-block: 4px; }
+.digital-card .project-status {
+  display: inline-block;
+  max-width: 100%;
+  margin: 0 0 8px;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: .8rem;
+  font-weight: 700;
+}
+.project-catalog summary { padding-block: 8px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  body { transition: none; }
+}

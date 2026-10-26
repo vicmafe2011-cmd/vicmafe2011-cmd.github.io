@@ -135,11 +135,11 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="styles.css?v=2.6.3">
-  <script defer src="script.js?v=2.6.1"></script>
+  <link rel="stylesheet" href="styles.css?v=2.6.4">
+  <script defer src="script.js?v=2.6.4"></script>
 </head>
 <body>
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <a class="skip-link" href="#contenido" data-es="Saltar al contenido" data-en="Skip to content">Saltar al contenido</a>
 
   <header class="site-header">
     <div class="container nav-wrap">
@@ -148,9 +148,9 @@
         <span class="brand-name">Víctor Manuel Ferrer García</span>
       </a>
 
-      <button class="menu-button" aria-expanded="false" aria-controls="main-nav">Menú</button>
+      <button type="button" data-es="Menú" data-en="Menu" class="menu-button" aria-expanded="false" aria-controls="main-nav">Menú</button>
 
-      <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+      <nav id="main-nav" class="main-nav" aria-label="Navegación principal" data-aria-label-es="Navegación principal" data-aria-label-en="Main navigation">
         <a href="#perfil" data-es="Perfil" data-en="Profile">Perfil</a>
         <a href="#doctorado" data-es="Formación" data-en="Education">Formación</a>
         <a href="#investigacion" data-es="Investigación" data-en="Research">Investigación</a>
@@ -160,13 +160,13 @@
         <a href="#trayectoria" data-es="Trayectoria" data-en="Background">Trayectoria</a>
         <a href="#perfiles-academicos" data-es="Perfiles" data-en="Profiles">Perfiles</a>
         <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
-        <button id="theme-toggle" class="icon-button" type="button" aria-label="Cambiar tema">◐</button>
-        <button id="lang-toggle" class="text-button" type="button" aria-label="Cambiar idioma">EN</button>
+        <button id="theme-toggle" class="icon-button" type="button" aria-label="Activar modo oscuro">◐</button>
+        <button id="lang-toggle" class="text-button" type="button" aria-label="Cambiar a inglés">EN</button>
       </nav>
     </div>
   </header>
 
-  <main id="contenido">
+  <main id="contenido" tabindex="-1">
     <section id="inicio" class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
@@ -179,19 +179,19 @@
             <a class="button secondary" href="#contacto" data-es="Contacto académico" data-en="Academic contact">Contacto académico</a>
           </div>
 
-          <div class="social-row" aria-label="Enlaces académicos">
-            <a href="https://github.com/vicmafe2011-cmd" target="_blank" rel="me noopener">GitHub</a>
+          <div class="social-row" aria-label="Enlaces académicos" data-aria-label-es="Enlaces académicos" data-aria-label-en="Academic links">
+            <a href="https://github.com/vicmafe2011-cmd" target="_blank" rel="me noopener noreferrer">GitHub</a>
             <span>·</span>
-            <a href="https://osf.io/user/jkeu6" target="_blank" rel="me noopener">OSF</a>
+            <a href="https://osf.io/user/jkeu6" target="_blank" rel="me noopener noreferrer">OSF</a>
             <span>·</span>
             <a href="mailto:vicmafe2011@gmail.com">Email</a>
             <span>·</span>
-            <a href="https://orcid.org/0009-0008-2470-1369" target="_blank" rel="me noopener">ORCID</a>
+            <a href="https://orcid.org/0009-0008-2470-1369" target="_blank" rel="me noopener noreferrer">ORCID</a>
           </div>
         </div>
 
         <aside class="portrait-card">
-          <div class="portrait-placeholder" aria-label="Espacio reservado para fotografía">
+          <div class="portrait-placeholder" aria-label="Espacio reservado para fotografía" data-aria-label-es="Espacio reservado para fotografía" data-aria-label-en="Photograph placeholder">
             <span>VF</span>
           </div>
           <div class="portrait-meta">
@@ -564,22 +564,588 @@
       </div>
     </section>
 
-    <section id="proyectos-digitales" class="section alt-section" aria-labelledby="digitales-heading"><div class="container"><p class="section-label" data-es="ECOSISTEMA EDUCATIVO" data-en="EDUCATIONAL ECOSYSTEM">ECOSISTEMA EDUCATIVO</p><h2 id="digitales-heading" data-es="Proyectos digitales" data-en="Digital projects">Proyectos digitales</h2><h3  data-es="Selección destacada" data-en="Featured selection">Selección destacada</h3><div class="digital-grid"><article class="digital-card" data-project="FiloCards"><p class="project-tag" data-es="Filosofía y humanidades" data-en="Philosophy and humanities">Filosofía y humanidades</p><h4>FiloCards</h4><p  data-es="Recurso educativo de filosofía." data-en="Educational resource for philosophy.">Recurso educativo de filosofía.</p><p class="project-area" data-es="Área educativa: Filosofía" data-en="Educational area: Philosophy">Área educativa: Filosofía</p><div class="publication-links"><a href="https://github.com/vicmafe2011-cmd/filocards" target="_blank" rel="noopener" data-es="Ver en GitHub" data-en="View on GitHub">Ver en GitHub</a><a href="https://filocards.vercel.app" target="_blank" rel="noopener" data-es="Abrir aplicación" data-en="Open application">Abrir aplicación</a></div></article>
-<article class="digital-card" data-project="Noesis PAU 2027"><p class="project-tag" data-es="Filosofía y humanidades" data-en="Philosophy and humanities">Filosofía y humanidades</p><h4>Noesis PAU 2027</h4><p  data-es="Recurso educativo de filosofía y preparación de la PAU." data-en="Educational resource for philosophy and PAU preparation.">Recurso educativo de filosofía y preparación de la PAU.</p><p class="project-area" data-es="Área educativa: Filosofía y preparación de la PAU" data-en="Educational area: Philosophy and PAU preparation">Área educativa: Filosofía y preparación de la PAU</p><div class="publication-links"><a href="https://github.com/vicmafe2011-cmd/noesis-pau-2027" target="_blank" rel="noopener" data-es="Ver en GitHub" data-en="View on GitHub">Ver en GitHub</a><a href="https://noesis-pau-2027.vercel.app" target="_blank" rel="noopener" data-es="Abrir aplicación" data-en="Open application">Abrir aplicación</a></div></article>
-<article class="digital-card" data-project="Mi Brújula de Valores"><p class="project-tag" data-es="Filosofía y humanidades" data-en="Philosophy and humanities">Filosofía y humanidades</p><h4>Mi Brújula de Valores</h4><p  data-es="Recurso educativo de educación en valores." data-en="Educational resource for values education.">Recurso educativo de educación en valores.</p><p class="project-area" data-es="Área educativa: Educación en valores" data-en="Educational area: Values education">Área educativa: Educación en valores</p><div class="publication-links"><a href="https://github.com/vicmafe2011-cmd/mi-brujula-de-valores" target="_blank" rel="noopener" data-es="Ver en GitHub" data-en="View on GitHub">Ver en GitHub</a><a href="https://mi-brujula-de-valores.vercel.app" target="_blank" rel="noopener" data-es="Abrir aplicación" data-en="Open application">Abrir aplicación</a></div></article>
-<article class="digital-card" data-project="BioCards"><p class="project-tag" data-es="Ciencias" data-en="Sciences">Ciencias</p><h4>BioCards</h4><p  data-es="Recurso educativo de biología." data-en="Educational resource for biology.">Recurso educativo de biología.</p><p class="project-area" data-es="Área educativa: Biología" data-en="Educational area: Biology">Área educativa: Biología</p><div class="publication-links"><a href="https://github.com/vicmafe2011-cmd/BioCards" target="_blank" rel="noopener" data-es="Ver en GitHub" data-en="View on GitHub">Ver en GitHub</a><a href="https://bio-cards-three.vercel.app" target="_blank" rel="noopener" data-es="Abrir aplicación" data-en="Open application">Abrir aplicación</a></div></article>
-<article class="digital-card" data-project="Quimicard"><p class="project-tag" data-es="Ciencias" data-en="Sciences">Ciencias</p><h4>Quimicard</h4><p  data-es="Recurso educativo de química." data-en="Educational resource for chemistry.">Recurso educativo de química.</p><p class="project-area" data-es="Área educativa: Química" data-en="Educational area: Chemistry">Área educativa: Química</p><div class="publication-links"><a href="https://github.com/vicmafe2011-cmd/Quimicards" target="_blank" rel="noopener" data-es="Ver en GitHub" data-en="View on GitHub">Ver en GitHub</a><a href="https://quimicards.vercel.app" target="_blank" rel="noopener" data-es="Abrir aplicación" data-en="Open application">Abrir aplicación</a></div></article>
-<article class="digital-card" data-project="DerechoCards"><p class="project-tag" data-es="Derecho" data-en="Law">Derecho</p><h4>DerechoCards</h4><p  data-es="Recurso educativo de derecho." data-en="Educational resource for law.">Recurso educativo de derecho.</p><p class="project-area" data-es="Área educativa: Derecho" data-en="Educational area: Law">Área educativa: Derecho</p><div class="publication-links"><a href="https://github.com/vicmafe2011-cmd/DerechoCards" target="_blank" rel="noopener" data-es="Ver en GitHub" data-en="View on GitHub">Ver en GitHub</a><a href="https://derecho-cards.vercel.app" target="_blank" rel="noopener" data-es="Abrir aplicación" data-en="Open application">Abrir aplicación</a></div></article></div><h3 class="catalog-heading" data-es="Más proyectos por áreas" data-en="More projects by subject">Más proyectos por áreas</h3><details class="project-catalog"><summary  data-es="Filosofía y humanidades · 7 proyectos" data-en="Philosophy and humanities · 7 projects">Filosofía y humanidades · 7 proyectos</summary><div class="digital-grid"><article class="digital-card" data-project="Filosofía PAU"><p class="project-tag" data-es="Filosofía y humanidades" data-en="Philosophy and humanities">Filosofía y humanidades</p><h4>Filosofía PAU</h4><p  data-es="Recurso educativo de preparación de filosofía para la pau." data-en="Educational resource for philosophy preparation for the PAU.">Recurso educativo de preparación de filosofía para la pau.</p><p class="project-area" data-es="Área educativa: Preparación de Filosofía para la PAU" data-en="Educational area: Philosophy preparation for the PAU">Área educativa: Preparación de Filosofía para la PAU</p><div class="publication-links"><a href="https://github.com/vicmafe2011-cmd/filosofia-pau-app" target="_blank" rel="noopener" data-es="Ver en GitHub" data-en="View on GitHub">Ver en GitHub</a></div></article>
-<article class="digital-card" data-project="Tribunal Filosófico"><p class="project-tag" data-es="Filosofía y humanidades" data-en="Philosophy and humanities">Filosofía y humanidades</p><h4>Tribunal Filosófico</h4><p  data-es="Recurso educativo de diálogo y argumentación filosófica." data-en="Educational resource for philosophical dialogue and argumentation.">Recurso educativo de diálogo y argumentación filosófica.</p><p class="project-area" data-es="Área educativa: Diálogo y argumentación filosófica" data-en="Educational area: Philosophical dialogue and argumentation">Área educativa: Diálogo y argumentación filosófica</p><div class="publication-links"><a href="https://github.com/vicmafe2011-cmd/TRIBUNAL-FILOS-FICO" target="_blank" rel="noopener" data-es="Ver en GitHub" data-en="View on GitHub">Ver en GitHub</a></div></article>
-<article class="digital-card" data-project="Trifilo"><p class="project-tag" data-es="Filosofía y humanidades" data-en="Philosophy and humanities">Filosofía y humanidades</p><h4>Trifilo</h4><p  data-es="Recurso educativo de filosofía." data-en="Educational resource for philosophy.">Recurso educativo de filosofía.</p><p class="project-area" data-es="Área educativa: Filosofía" data-en="Educational area: Philosophy">Área educativa: Filosofía</p><div class="publication-links"><a href="https://github.com/vicmafe2011-cmd/trifilo" target="_blank" rel="noopener" data-es="Ver en GitHub" data-en="View on GitHub">Ver en GitHub</a></div></article>
-<article class="digital-card" data-project="HABLAS: Palabra del Día"><p class="project-tag" data-es="Filosofía y humanidades" data-en="Philosophy and humanities">Filosofía y humanidades</p><h4>HABLAS: Palabra del Día</h4><p  data-es="Recurso educativo de lengua y vocabulario." data-en="Educational resource for language and vocabulary.">Recurso educativo de lengua y vocabulario.</p><p class="project-area" data-es="Área educativa: Lengua y vocabulario" data-en="Educational area: Language and vocabulary">Área educativa: Lengua y vocabulario</p><div class="publication-links"><a href="https://github.com/vicmafe2011-cmd/HABLAS" target="_blank" rel="noopener" data-es="Ver en GitHub" data-en="View on GitHub">Ver en GitHub</a></div></article>
-<article class="digital-card" data-project="HistoCards"><p class="project-tag" data-es="Filosofía y humanidades" data-en="Philosophy and humanities">Filosofía y humanidades</p><h4>HistoCards</h4><p  data-es="Recurso educativo de historia." data-en="Educational resource for history.">Recurso educativo de historia.</p><p class="project-area" data-es="Área educativa: Historia" data-en="Educational area: History">Área educativa: Historia</p><div class="publication-links"><a href="https://github.com/vicmafe2011-cmd/HistoCards" target="_blank" rel="noopener" data-es="Ver en GitHub" data-en="View on GitHub">Ver en GitHub</a><a href="https://histo-cards.vercel.app" target="_blank" rel="noopener" data-es="Abrir aplicación" data-en="Open application">Abrir aplicación</a></div></article>
-<article class="digital-card" data-project="LiterCards"><p class="project-tag" data-es="Filosofía y humanidades" data-en="Philosophy and humanities">Filosofía y humanidades</p><h4>LiterCards</h4><p  data-es="Recurso educativo de literatura." data-en="Educational resource for literature.">Recurso educativo de literatura.</p><p class="project-area" data-es="Área educativa: Literatura" data-en="Educational area: Literature">Área educativa: Literatura</p><div class="publication-links"><a href="https://github.com/vicmafe2011-cmd/LiterCards" target="_blank" rel="noopener" data-es="Ver en GitHub" data-en="View on GitHub">Ver en GitHub</a><a href="https://liter-cards.vercel.app" target="_blank" rel="noopener" data-es="Abrir aplicación" data-en="Open application">Abrir aplicación</a></div></article>
-<article class="digital-card" data-project="La Voz de la Ética"><p class="project-tag" data-es="Filosofía y humanidades" data-en="Philosophy and humanities">Filosofía y humanidades</p><h4>La Voz de la Ética</h4><p  data-es="Recurso educativo de ética." data-en="Educational resource for ethics.">Recurso educativo de ética.</p><p class="project-area" data-es="Área educativa: Ética" data-en="Educational area: Ethics">Área educativa: Ética</p><div class="publication-links"></div></article></div></details>
-<details class="project-catalog"><summary  data-es="Ciencias · 3 proyectos" data-en="Sciences · 3 projects">Ciencias · 3 proyectos</summary><div class="digital-grid"><article class="digital-card" data-project="Fisicards"><p class="project-tag" data-es="Ciencias" data-en="Sciences">Ciencias</p><h4>Fisicards</h4><p  data-es="Recurso educativo de física." data-en="Educational resource for physics.">Recurso educativo de física.</p><p class="project-area" data-es="Área educativa: Física" data-en="Educational area: Physics">Área educativa: Física</p><div class="publication-links"><a href="https://github.com/vicmafe2011-cmd/fisicards" target="_blank" rel="noopener" data-es="Ver en GitHub" data-en="View on GitHub">Ver en GitHub</a><a href="https://fisicards.vercel.app" target="_blank" rel="noopener" data-es="Abrir aplicación" data-en="Open application">Abrir aplicación</a></div></article>
-<article class="digital-card" data-project="Matecards"><p class="project-tag" data-es="Ciencias" data-en="Sciences">Ciencias</p><h4>Matecards</h4><p  data-es="Recurso educativo de matemáticas." data-en="Educational resource for mathematics.">Recurso educativo de matemáticas.</p><p class="project-area" data-es="Área educativa: Matemáticas" data-en="Educational area: Mathematics">Área educativa: Matemáticas</p><div class="publication-links"><a href="https://github.com/vicmafe2011-cmd/Matecards" target="_blank" rel="noopener" data-es="Ver en GitHub" data-en="View on GitHub">Ver en GitHub</a><a href="https://matecards.vercel.app" target="_blank" rel="noopener" data-es="Abrir aplicación" data-en="Open application">Abrir aplicación</a></div></article>
-<article class="digital-card" data-project="MediCards / Tarjetas médicas"><p class="project-tag" data-es="Ciencias" data-en="Sciences">Ciencias</p><h4>MediCards / Tarjetas médicas</h4><p  data-es="Recurso educativo de medicina y divulgación científica." data-en="Educational resource for medicine and science communication.">Recurso educativo de medicina y divulgación científica.</p><p class="project-area" data-es="Área educativa: Medicina y divulgación científica" data-en="Educational area: Medicine and science communication">Área educativa: Medicina y divulgación científica</p><div class="publication-links"><a href="https://github.com/vicmafe2011-cmd/Medicards" target="_blank" rel="noopener" data-es="Ver en GitHub" data-en="View on GitHub">Ver en GitHub</a><a href="https://medicards-nine.vercel.app" target="_blank" rel="noopener" data-es="Abrir aplicación" data-en="Open application">Abrir aplicación</a></div></article></div></details>
-<div class="publication-links"><a href="https://github.com/vicmafe2011-cmd" target="_blank" rel="noopener" data-es="Explorar todos los proyectos en GitHub" data-en="Explore all projects on GitHub">Explorar todos los proyectos en GitHub</a></div></div></section>
+    <section id="proyectos-digitales" class="section alt-section" aria-labelledby="digitales-heading">
+      <div class="container">
+        <p class="section-label" data-es="ECOSISTEMA EDUCATIVO" data-en="EDUCATIONAL ECOSYSTEM">ECOSISTEMA EDUCATIVO</p>
+        <h2 id="digitales-heading" data-es="Proyectos digitales" data-en="Digital projects">Proyectos digitales</h2>
+        <h3  data-es="Selección destacada" data-en="Featured selection">Selección destacada</h3>
+        <div class="digital-grid">
+          <article class="digital-card" aria-labelledby="project-filocards" data-project="FiloCards">
+            <p class="project-tag" data-es="Filosofía y humanidades" data-en="Philosophy and humanities">Filosofía y humanidades</p>
+            <h4 id="project-filocards">FiloCards</h4>
+            <p
+              data-es="Recurso educativo de filosofía."
+              data-en="Educational resource for philosophy.">
+              Recurso educativo de filosofía.
+            </p>
+            <p
+              class="project-area"
+              data-es="Área educativa: Filosofía"
+              data-en="Educational area: Philosophy">
+              Área educativa: Filosofía
+            </p>
+            <p class="project-status" data-es="Disponible" data-en="Available">Disponible</p>
+            <div class="publication-links">
+              <a
+                href="https://github.com/vicmafe2011-cmd/filocards"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-es="Ver en GitHub"
+                data-en="View on GitHub"
+                aria-label="Ver en GitHub: FiloCards (se abre en otra pestaña)"
+                data-aria-label-es="Ver en GitHub: FiloCards (se abre en otra pestaña)"
+                data-aria-label-en="View on GitHub: FiloCards (opens in a new tab)">
+                Ver en GitHub
+              </a>
+              <a
+                href="https://filocards.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-es="Abrir aplicación"
+                data-en="Open application"
+                aria-label="Abrir aplicación: FiloCards (se abre en otra pestaña)"
+                data-aria-label-es="Abrir aplicación: FiloCards (se abre en otra pestaña)"
+                data-aria-label-en="Open application: FiloCards (opens in a new tab)">
+                Abrir aplicación
+              </a>
+            </div>
+          </article>
+          <article class="digital-card" aria-labelledby="project-noesis-pau-2027" data-project="Noesis PAU 2027">
+            <p class="project-tag" data-es="Filosofía y humanidades" data-en="Philosophy and humanities">Filosofía y humanidades</p>
+            <h4 id="project-noesis-pau-2027">Noesis PAU 2027</h4>
+            <p
+              data-es="Recurso educativo de filosofía y preparación de la PAU."
+              data-en="Educational resource for philosophy and PAU preparation.">
+              Recurso educativo de filosofía y preparación de la PAU.
+            </p>
+            <p
+              class="project-area"
+              data-es="Área educativa: Filosofía y preparación de la PAU"
+              data-en="Educational area: Philosophy and PAU preparation">
+              Área educativa: Filosofía y preparación de la PAU
+            </p>
+            <p class="project-status" data-es="Disponible" data-en="Available">Disponible</p>
+            <div class="publication-links">
+              <a
+                href="https://github.com/vicmafe2011-cmd/noesis-pau-2027"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-es="Ver en GitHub"
+                data-en="View on GitHub"
+                aria-label="Ver en GitHub: Noesis PAU 2027 (se abre en otra pestaña)"
+                data-aria-label-es="Ver en GitHub: Noesis PAU 2027 (se abre en otra pestaña)"
+                data-aria-label-en="View on GitHub: Noesis PAU 2027 (opens in a new tab)">
+                Ver en GitHub
+              </a>
+              <a
+                href="https://noesis-pau-2027.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-es="Abrir aplicación"
+                data-en="Open application"
+                aria-label="Abrir aplicación: Noesis PAU 2027 (se abre en otra pestaña)"
+                data-aria-label-es="Abrir aplicación: Noesis PAU 2027 (se abre en otra pestaña)"
+                data-aria-label-en="Open application: Noesis PAU 2027 (opens in a new tab)">
+                Abrir aplicación
+              </a>
+            </div>
+          </article>
+          <article class="digital-card" aria-labelledby="project-mi-brujula-de-valores" data-project="Mi Brújula de Valores">
+            <p class="project-tag" data-es="Filosofía y humanidades" data-en="Philosophy and humanities">Filosofía y humanidades</p>
+            <h4 id="project-mi-brujula-de-valores">Mi Brújula de Valores</h4>
+            <p
+              data-es="Recurso educativo de educación en valores."
+              data-en="Educational resource for values education.">
+              Recurso educativo de educación en valores.
+            </p>
+            <p
+              class="project-area"
+              data-es="Área educativa: Educación en valores"
+              data-en="Educational area: Values education">
+              Área educativa: Educación en valores
+            </p>
+            <p class="project-status" data-es="Disponible" data-en="Available">Disponible</p>
+            <div class="publication-links">
+              <a
+                href="https://github.com/vicmafe2011-cmd/mi-brujula-de-valores"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-es="Ver en GitHub"
+                data-en="View on GitHub"
+                aria-label="Ver en GitHub: Mi Brújula de Valores (se abre en otra pestaña)"
+                data-aria-label-es="Ver en GitHub: Mi Brújula de Valores (se abre en otra pestaña)"
+                data-aria-label-en="View on GitHub: Mi Brújula de Valores (opens in a new tab)">
+                Ver en GitHub
+              </a>
+              <a
+                href="https://mi-brujula-de-valores.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-es="Abrir aplicación"
+                data-en="Open application"
+                aria-label="Abrir aplicación: Mi Brújula de Valores (se abre en otra pestaña)"
+                data-aria-label-es="Abrir aplicación: Mi Brújula de Valores (se abre en otra pestaña)"
+                data-aria-label-en="Open application: Mi Brújula de Valores (opens in a new tab)">
+                Abrir aplicación
+              </a>
+            </div>
+          </article>
+          <article class="digital-card" aria-labelledby="project-biocards" data-project="BioCards">
+            <p class="project-tag" data-es="Ciencias" data-en="Sciences">Ciencias</p>
+            <h4 id="project-biocards">BioCards</h4>
+            <p
+              data-es="Recurso educativo de biología."
+              data-en="Educational resource for biology.">
+              Recurso educativo de biología.
+            </p>
+            <p
+              class="project-area"
+              data-es="Área educativa: Biología"
+              data-en="Educational area: Biology">
+              Área educativa: Biología
+            </p>
+            <p class="project-status" data-es="Disponible" data-en="Available">Disponible</p>
+            <div class="publication-links">
+              <a
+                href="https://github.com/vicmafe2011-cmd/BioCards"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-es="Ver en GitHub"
+                data-en="View on GitHub"
+                aria-label="Ver en GitHub: BioCards (se abre en otra pestaña)"
+                data-aria-label-es="Ver en GitHub: BioCards (se abre en otra pestaña)"
+                data-aria-label-en="View on GitHub: BioCards (opens in a new tab)">
+                Ver en GitHub
+              </a>
+              <a
+                href="https://bio-cards-three.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-es="Abrir aplicación"
+                data-en="Open application"
+                aria-label="Abrir aplicación: BioCards (se abre en otra pestaña)"
+                data-aria-label-es="Abrir aplicación: BioCards (se abre en otra pestaña)"
+                data-aria-label-en="Open application: BioCards (opens in a new tab)">
+                Abrir aplicación
+              </a>
+            </div>
+          </article>
+          <article class="digital-card" aria-labelledby="project-quimicard" data-project="Quimicard">
+            <p class="project-tag" data-es="Ciencias" data-en="Sciences">Ciencias</p>
+            <h4 id="project-quimicard">Quimicard</h4>
+            <p
+              data-es="Recurso educativo de química."
+              data-en="Educational resource for chemistry.">
+              Recurso educativo de química.
+            </p>
+            <p
+              class="project-area"
+              data-es="Área educativa: Química"
+              data-en="Educational area: Chemistry">
+              Área educativa: Química
+            </p>
+            <p class="project-status" data-es="Disponible" data-en="Available">Disponible</p>
+            <div class="publication-links">
+              <a
+                href="https://github.com/vicmafe2011-cmd/Quimicards"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-es="Ver en GitHub"
+                data-en="View on GitHub"
+                aria-label="Ver en GitHub: Quimicard (se abre en otra pestaña)"
+                data-aria-label-es="Ver en GitHub: Quimicard (se abre en otra pestaña)"
+                data-aria-label-en="View on GitHub: Quimicard (opens in a new tab)">
+                Ver en GitHub
+              </a>
+              <a
+                href="https://quimicards.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-es="Abrir aplicación"
+                data-en="Open application"
+                aria-label="Abrir aplicación: Quimicard (se abre en otra pestaña)"
+                data-aria-label-es="Abrir aplicación: Quimicard (se abre en otra pestaña)"
+                data-aria-label-en="Open application: Quimicard (opens in a new tab)">
+                Abrir aplicación
+              </a>
+            </div>
+          </article>
+          <article class="digital-card" aria-labelledby="project-derechocards" data-project="DerechoCards">
+            <p class="project-tag" data-es="Derecho" data-en="Law">Derecho</p>
+            <h4 id="project-derechocards">DerechoCards</h4>
+            <p  data-es="Recurso educativo de derecho." data-en="Educational resource for law.">Recurso educativo de derecho.</p>
+            <p class="project-area" data-es="Área educativa: Derecho" data-en="Educational area: Law">Área educativa: Derecho</p>
+            <p class="project-status" data-es="Disponible" data-en="Available">Disponible</p>
+            <div class="publication-links">
+              <a
+                href="https://github.com/vicmafe2011-cmd/DerechoCards"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-es="Ver en GitHub"
+                data-en="View on GitHub"
+                aria-label="Ver en GitHub: DerechoCards (se abre en otra pestaña)"
+                data-aria-label-es="Ver en GitHub: DerechoCards (se abre en otra pestaña)"
+                data-aria-label-en="View on GitHub: DerechoCards (opens in a new tab)">
+                Ver en GitHub
+              </a>
+              <a
+                href="https://derecho-cards.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-es="Abrir aplicación"
+                data-en="Open application"
+                aria-label="Abrir aplicación: DerechoCards (se abre en otra pestaña)"
+                data-aria-label-es="Abrir aplicación: DerechoCards (se abre en otra pestaña)"
+                data-aria-label-en="Open application: DerechoCards (opens in a new tab)">
+                Abrir aplicación
+              </a>
+            </div>
+          </article>
+        </div>
+        <h3 class="catalog-heading" data-es="Más proyectos por áreas" data-en="More projects by subject">Más proyectos por áreas</h3>
+        <details class="project-catalog">
+          <summary
+            data-es="Filosofía y humanidades · 7 proyectos"
+            data-en="Philosophy and humanities · 7 projects">
+            Filosofía y humanidades · 7 proyectos
+          </summary>
+          <div class="digital-grid">
+            <article class="digital-card" aria-labelledby="project-filosofia-pau" data-project="Filosofía PAU">
+              <p class="project-tag" data-es="Filosofía y humanidades" data-en="Philosophy and humanities">Filosofía y humanidades</p>
+              <h4 id="project-filosofia-pau">Filosofía PAU</h4>
+              <p
+                data-es="Recurso educativo de preparación de filosofía para la pau."
+                data-en="Educational resource for philosophy preparation for the PAU.">
+                Recurso educativo de preparación de filosofía para la pau.
+              </p>
+              <p
+                class="project-area"
+                data-es="Área educativa: Preparación de Filosofía para la PAU"
+                data-en="Educational area: Philosophy preparation for the PAU">
+                Área educativa: Preparación de Filosofía para la PAU
+              </p>
+              <p class="project-status" data-es="Recurso educativo" data-en="Educational resource">Recurso educativo</p>
+              <div class="publication-links">
+                <a
+                  href="https://github.com/vicmafe2011-cmd/filosofia-pau-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-es="Ver en GitHub"
+                  data-en="View on GitHub"
+                  aria-label="Ver en GitHub: Filosofía PAU (se abre en otra pestaña)"
+                  data-aria-label-es="Ver en GitHub: Filosofía PAU (se abre en otra pestaña)"
+                  data-aria-label-en="View on GitHub: Filosofía PAU (opens in a new tab)">
+                  Ver en GitHub
+                </a>
+              </div>
+            </article>
+            <article class="digital-card" aria-labelledby="project-tribunal-filosofico" data-project="Tribunal Filosófico">
+              <p class="project-tag" data-es="Filosofía y humanidades" data-en="Philosophy and humanities">Filosofía y humanidades</p>
+              <h4 id="project-tribunal-filosofico">Tribunal Filosófico</h4>
+              <p
+                data-es="Recurso educativo de diálogo y argumentación filosófica."
+                data-en="Educational resource for philosophical dialogue and argumentation.">
+                Recurso educativo de diálogo y argumentación filosófica.
+              </p>
+              <p
+                class="project-area"
+                data-es="Área educativa: Diálogo y argumentación filosófica"
+                data-en="Educational area: Philosophical dialogue and argumentation">
+                Área educativa: Diálogo y argumentación filosófica
+              </p>
+              <p class="project-status" data-es="Recurso educativo" data-en="Educational resource">Recurso educativo</p>
+              <div class="publication-links">
+                <a
+                  href="https://github.com/vicmafe2011-cmd/TRIBUNAL-FILOS-FICO"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-es="Ver en GitHub"
+                  data-en="View on GitHub"
+                  aria-label="Ver en GitHub: Tribunal Filosófico (se abre en otra pestaña)"
+                  data-aria-label-es="Ver en GitHub: Tribunal Filosófico (se abre en otra pestaña)"
+                  data-aria-label-en="View on GitHub: Tribunal Filosófico (opens in a new tab)">
+                  Ver en GitHub
+                </a>
+              </div>
+            </article>
+            <article class="digital-card" aria-labelledby="project-trifilo" data-project="Trifilo">
+              <p class="project-tag" data-es="Filosofía y humanidades" data-en="Philosophy and humanities">Filosofía y humanidades</p>
+              <h4 id="project-trifilo">Trifilo</h4>
+              <p
+                data-es="Recurso educativo de filosofía."
+                data-en="Educational resource for philosophy.">
+                Recurso educativo de filosofía.
+              </p>
+              <p
+                class="project-area"
+                data-es="Área educativa: Filosofía"
+                data-en="Educational area: Philosophy">
+                Área educativa: Filosofía
+              </p>
+              <p class="project-status" data-es="Recurso educativo" data-en="Educational resource">Recurso educativo</p>
+              <div class="publication-links">
+                <a
+                  href="https://github.com/vicmafe2011-cmd/trifilo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-es="Ver en GitHub"
+                  data-en="View on GitHub"
+                  aria-label="Ver en GitHub: Trifilo (se abre en otra pestaña)"
+                  data-aria-label-es="Ver en GitHub: Trifilo (se abre en otra pestaña)"
+                  data-aria-label-en="View on GitHub: Trifilo (opens in a new tab)">
+                  Ver en GitHub
+                </a>
+              </div>
+            </article>
+            <article class="digital-card" aria-labelledby="project-hablas-palabra-del-dia" data-project="HABLAS: Palabra del Día">
+              <p class="project-tag" data-es="Filosofía y humanidades" data-en="Philosophy and humanities">Filosofía y humanidades</p>
+              <h4 id="project-hablas-palabra-del-dia">HABLAS: Palabra del Día</h4>
+              <p
+                data-es="Recurso educativo de lengua y vocabulario."
+                data-en="Educational resource for language and vocabulary.">
+                Recurso educativo de lengua y vocabulario.
+              </p>
+              <p
+                class="project-area"
+                data-es="Área educativa: Lengua y vocabulario"
+                data-en="Educational area: Language and vocabulary">
+                Área educativa: Lengua y vocabulario
+              </p>
+              <p class="project-status" data-es="Recurso educativo" data-en="Educational resource">Recurso educativo</p>
+              <div class="publication-links">
+                <a
+                  href="https://github.com/vicmafe2011-cmd/HABLAS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-es="Ver en GitHub"
+                  data-en="View on GitHub"
+                  aria-label="Ver en GitHub: HABLAS: Palabra del Día (se abre en otra pestaña)"
+                  data-aria-label-es="Ver en GitHub: HABLAS: Palabra del Día (se abre en otra pestaña)"
+                  data-aria-label-en="View on GitHub: HABLAS: Palabra del Día (opens in a new tab)">
+                  Ver en GitHub
+                </a>
+              </div>
+            </article>
+            <article class="digital-card" aria-labelledby="project-histocards" data-project="HistoCards">
+              <p class="project-tag" data-es="Filosofía y humanidades" data-en="Philosophy and humanities">Filosofía y humanidades</p>
+              <h4 id="project-histocards">HistoCards</h4>
+              <p
+                data-es="Recurso educativo de historia."
+                data-en="Educational resource for history.">
+                Recurso educativo de historia.
+              </p>
+              <p
+                class="project-area"
+                data-es="Área educativa: Historia"
+                data-en="Educational area: History">
+                Área educativa: Historia
+              </p>
+              <p class="project-status" data-es="Disponible" data-en="Available">Disponible</p>
+              <div class="publication-links">
+                <a
+                  href="https://github.com/vicmafe2011-cmd/HistoCards"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-es="Ver en GitHub"
+                  data-en="View on GitHub"
+                  aria-label="Ver en GitHub: HistoCards (se abre en otra pestaña)"
+                  data-aria-label-es="Ver en GitHub: HistoCards (se abre en otra pestaña)"
+                  data-aria-label-en="View on GitHub: HistoCards (opens in a new tab)">
+                  Ver en GitHub
+                </a>
+                <a
+                  href="https://histo-cards.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-es="Abrir aplicación"
+                  data-en="Open application"
+                  aria-label="Abrir aplicación: HistoCards (se abre en otra pestaña)"
+                  data-aria-label-es="Abrir aplicación: HistoCards (se abre en otra pestaña)"
+                  data-aria-label-en="Open application: HistoCards (opens in a new tab)">
+                  Abrir aplicación
+                </a>
+              </div>
+            </article>
+            <article class="digital-card" aria-labelledby="project-litercards" data-project="LiterCards">
+              <p class="project-tag" data-es="Filosofía y humanidades" data-en="Philosophy and humanities">Filosofía y humanidades</p>
+              <h4 id="project-litercards">LiterCards</h4>
+              <p
+                data-es="Recurso educativo de literatura."
+                data-en="Educational resource for literature.">
+                Recurso educativo de literatura.
+              </p>
+              <p
+                class="project-area"
+                data-es="Área educativa: Literatura"
+                data-en="Educational area: Literature">
+                Área educativa: Literatura
+              </p>
+              <p class="project-status" data-es="Disponible" data-en="Available">Disponible</p>
+              <div class="publication-links">
+                <a
+                  href="https://github.com/vicmafe2011-cmd/LiterCards"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-es="Ver en GitHub"
+                  data-en="View on GitHub"
+                  aria-label="Ver en GitHub: LiterCards (se abre en otra pestaña)"
+                  data-aria-label-es="Ver en GitHub: LiterCards (se abre en otra pestaña)"
+                  data-aria-label-en="View on GitHub: LiterCards (opens in a new tab)">
+                  Ver en GitHub
+                </a>
+                <a
+                  href="https://liter-cards.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-es="Abrir aplicación"
+                  data-en="Open application"
+                  aria-label="Abrir aplicación: LiterCards (se abre en otra pestaña)"
+                  data-aria-label-es="Abrir aplicación: LiterCards (se abre en otra pestaña)"
+                  data-aria-label-en="Open application: LiterCards (opens in a new tab)">
+                  Abrir aplicación
+                </a>
+              </div>
+            </article>
+            <article class="digital-card" aria-labelledby="project-la-voz-de-la-etica" data-project="La Voz de la Ética">
+              <p class="project-tag" data-es="Filosofía y humanidades" data-en="Philosophy and humanities">Filosofía y humanidades</p>
+              <h4 id="project-la-voz-de-la-etica">La Voz de la Ética</h4>
+              <p  data-es="Recurso educativo de ética." data-en="Educational resource for ethics.">Recurso educativo de ética.</p>
+              <p class="project-area" data-es="Área educativa: Ética" data-en="Educational area: Ethics">Área educativa: Ética</p>
+              <p class="project-status" data-es="En desarrollo" data-en="In development">En desarrollo</p>
+            </article>
+          </div>
+        </details>
+        <details class="project-catalog">
+          <summary  data-es="Ciencias · 3 proyectos" data-en="Sciences · 3 projects">Ciencias · 3 proyectos</summary>
+          <div class="digital-grid">
+            <article class="digital-card" aria-labelledby="project-fisicards" data-project="Fisicards">
+              <p class="project-tag" data-es="Ciencias" data-en="Sciences">Ciencias</p>
+              <h4 id="project-fisicards">Fisicards</h4>
+              <p  data-es="Recurso educativo de física." data-en="Educational resource for physics.">Recurso educativo de física.</p>
+              <p class="project-area" data-es="Área educativa: Física" data-en="Educational area: Physics">Área educativa: Física</p>
+              <p class="project-status" data-es="Disponible" data-en="Available">Disponible</p>
+              <div class="publication-links">
+                <a
+                  href="https://github.com/vicmafe2011-cmd/fisicards"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-es="Ver en GitHub"
+                  data-en="View on GitHub"
+                  aria-label="Ver en GitHub: Fisicards (se abre en otra pestaña)"
+                  data-aria-label-es="Ver en GitHub: Fisicards (se abre en otra pestaña)"
+                  data-aria-label-en="View on GitHub: Fisicards (opens in a new tab)">
+                  Ver en GitHub
+                </a>
+                <a
+                  href="https://fisicards.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-es="Abrir aplicación"
+                  data-en="Open application"
+                  aria-label="Abrir aplicación: Fisicards (se abre en otra pestaña)"
+                  data-aria-label-es="Abrir aplicación: Fisicards (se abre en otra pestaña)"
+                  data-aria-label-en="Open application: Fisicards (opens in a new tab)">
+                  Abrir aplicación
+                </a>
+              </div>
+            </article>
+            <article class="digital-card" aria-labelledby="project-matecards" data-project="Matecards">
+              <p class="project-tag" data-es="Ciencias" data-en="Sciences">Ciencias</p>
+              <h4 id="project-matecards">Matecards</h4>
+              <p
+                data-es="Recurso educativo de matemáticas."
+                data-en="Educational resource for mathematics.">
+                Recurso educativo de matemáticas.
+              </p>
+              <p
+                class="project-area"
+                data-es="Área educativa: Matemáticas"
+                data-en="Educational area: Mathematics">
+                Área educativa: Matemáticas
+              </p>
+              <p class="project-status" data-es="Disponible" data-en="Available">Disponible</p>
+              <div class="publication-links">
+                <a
+                  href="https://github.com/vicmafe2011-cmd/Matecards"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-es="Ver en GitHub"
+                  data-en="View on GitHub"
+                  aria-label="Ver en GitHub: Matecards (se abre en otra pestaña)"
+                  data-aria-label-es="Ver en GitHub: Matecards (se abre en otra pestaña)"
+                  data-aria-label-en="View on GitHub: Matecards (opens in a new tab)">
+                  Ver en GitHub
+                </a>
+                <a
+                  href="https://matecards.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-es="Abrir aplicación"
+                  data-en="Open application"
+                  aria-label="Abrir aplicación: Matecards (se abre en otra pestaña)"
+                  data-aria-label-es="Abrir aplicación: Matecards (se abre en otra pestaña)"
+                  data-aria-label-en="Open application: Matecards (opens in a new tab)">
+                  Abrir aplicación
+                </a>
+              </div>
+            </article>
+            <article
+              class="digital-card"
+              aria-labelledby="project-medicards-tarjetas-medicas"
+              data-project="MediCards / Tarjetas médicas">
+              <p class="project-tag" data-es="Ciencias" data-en="Sciences">Ciencias</p>
+              <h4 id="project-medicards-tarjetas-medicas">MediCards / Tarjetas médicas</h4>
+              <p
+                data-es="Recurso educativo de medicina y divulgación científica."
+                data-en="Educational resource for medicine and science communication.">
+                Recurso educativo de medicina y divulgación científica.
+              </p>
+              <p
+                class="project-area"
+                data-es="Área educativa: Medicina y divulgación científica"
+                data-en="Educational area: Medicine and science communication">
+                Área educativa: Medicina y divulgación científica
+              </p>
+              <p class="project-status" data-es="Disponible" data-en="Available">Disponible</p>
+              <div class="publication-links">
+                <a
+                  href="https://github.com/vicmafe2011-cmd/Medicards"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-es="Ver en GitHub"
+                  data-en="View on GitHub"
+                  aria-label="Ver en GitHub: MediCards / Tarjetas médicas (se abre en otra pestaña)"
+                  data-aria-label-es="Ver en GitHub: MediCards / Tarjetas médicas (se abre en otra pestaña)"
+                  data-aria-label-en="View on GitHub: MediCards / Tarjetas médicas (opens in a new tab)">
+                  Ver en GitHub
+                </a>
+                <a
+                  href="https://medicards-nine.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-es="Abrir aplicación"
+                  data-en="Open application"
+                  aria-label="Abrir aplicación: MediCards / Tarjetas médicas (se abre en otra pestaña)"
+                  data-aria-label-es="Abrir aplicación: MediCards / Tarjetas médicas (se abre en otra pestaña)"
+                  data-aria-label-en="Open application: MediCards / Tarjetas médicas (opens in a new tab)">
+                  Abrir aplicación
+                </a>
+              </div>
+            </article>
+          </div>
+        </details>
+        <div class="publication-links">
+          <a
+            href="https://github.com/vicmafe2011-cmd"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-es="Explorar todos los proyectos en GitHub"
+            data-en="Explore all projects on GitHub">
+            Explorar todos los proyectos en GitHub
+          </a>
+        </div>
+      </div>
+    </section>
 
     <section id="trayectoria" class="section alt-section">
       <div class="container">
@@ -630,17 +1196,17 @@
             <span>Web</span>
             <strong>vicmafe2011-cmd.github.io</strong>
           </a>
-          <a href="https://github.com/vicmafe2011-cmd" target="_blank" rel="me noopener">
+          <a href="https://github.com/vicmafe2011-cmd" target="_blank" rel="me noopener noreferrer">
             <span>GitHub</span>
             <strong>vicmafe2011-cmd</strong>
           </a>
-          <a href="https://osf.io/user/jkeu6" target="_blank" rel="me noopener">
+          <a href="https://osf.io/user/jkeu6" target="_blank" rel="me noopener noreferrer">
             <span>OSF</span>
             <strong>jkeu6</strong>
           </a>
           <div>
             <span>ORCID</span>
-            <strong><a href="https://orcid.org/0009-0008-2470-1369" target="_blank" rel="me noopener">0009-0008-2470-1369</a></strong>
+            <strong><a href="https://orcid.org/0009-0008-2470-1369" target="_blank" rel="me noopener noreferrer">0009-0008-2470-1369</a></strong>
           </div>
           <div id="perfil-cvn"><span>FECYT</span><strong  data-es="Curriculum Vitae Normalizado (CVN)" data-en="Standardized Curriculum Vitae (CVN)">Curriculum Vitae Normalizado (CVN)</strong></div>
         </div>
