@@ -276,3 +276,15 @@ h4 { font-size: 1.25rem; }
     flex-direction: column;
   }
 }
+
+/* Digital projects share the existing site palette and typography. */
+.digital-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin: 24px 0; }
+.digital-card { padding: 28px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.digital-card h4 { margin: 16px 0; }
+.digital-card p { color: var(--muted); }
+.digital-card .project-area { font-size: .85rem; }
+.catalog-heading { margin-top: 40px; }
+.project-catalog { border-top: 1px solid var(--line); padding: 20px 0; }
+.project-catalog summary { cursor: pointer; font-weight: 700; }
+.project-catalog summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 6px; }
+@media (max-width: 720px) { .digital-grid { grid-template-columns: 1fr; } }

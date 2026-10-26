@@ -133,3 +133,15 @@ Para revisar los cambios, sirve la carpeta con un servidor HTTP local y comprueb
 la navegación, el menú móvil, los idiomas ES/EN, los temas y la carga de ambos JSON.
 Revisa también `/robots.txt`, `/sitemap.xml` y el JSON-LD de `index.html`.
 Los cambios se proponen mediante `seo-v2-6` contra `main`, sin merge directo.
+
+### Catálogo de proyectos digitales
+
+El catálogo estático bilingüe de `index.html` contiene 16 proyectos: seis destacados y diez en grupos desplegables. Las aplicaciones enlazadas se comprobaron el 26 de octubre de 2026.
+
+- Filosofía PAU agrupa `filosofia-pau-app`, `filosofia-pau` y `filosof-a-pau-app`; enlaza la primera variante.
+- Trifilo agrupa `trifilo` y `trifilo-limpio`; enlaza el primer repositorio.
+- `TRIBUNAL-FILOS-FICO` se presenta como Tribunal Filosófico; `mi-brujula-de-valores`, como Mi Brújula de Valores.
+- `Quimicards` se presenta como Quimicard; `Medicards`, como MediCards / Tarjetas médicas.
+- La Voz de la Ética conserva su ficha sin enlaces hasta disponer de una dirección verificada.
+- Trifilo no enlaza la aplicación declarada en GitHub porque no se ha podido confirmar su correspondencia con el proyecto educativo.
+- La entrada FECYT/CVN (`#perfil-cvn`) es texto sin enlace. Cuando el autor aporte una URL pública verificable, convertirla en enlace y añadir esa URL a `Person.sameAs`.
