@@ -106,15 +106,21 @@ Cambios:
 
 ## Actualización v2.6 — SEO y autoría
 
-- Título SEO, descripción y Open Graph con la identidad de filósofo, investigador,
-  docente, autor y doctorando en Filosofía. Schema.org `Person`, `WebPage` y
-  `Book` relacionan identidad, actividad académica y autoría sin añadir afiliaciones.
-- Doctorado en curso y perfiles académicos con secciones propias; investigación
-  presentada mediante seis áreas generales.
+- Título SEO, descripción y Open Graph con la identidad de filósofo, profesor,
+  investigador, autor y doctorando en Filosofía por la Universidad de Murcia.
+  Schema.org `Person`, `WebPage`, `Book` y `CreativeWork` relacionan identidad
+  y autoría sin atribuir cargos o relaciones laborales universitarias.
+- Doctorado y formación académica con universidades, fechas y datos aportados
+  por el autor. Máster finalizado; estudios de Teología diferenciados de títulos
+  obtenidos. Formación complementaria e idiomas con sus niveles declarados.
+- Investigación presentada mediante once áreas generales.
+- Experiencia docente y trayectoria profesional con secciones propias.
 - Estado del manuscrito actualizado en HTML, JavaScript y JSON. La sección de
   publicaciones utiliza el texto neutral «Publicaciones académicas en preparación».
-- Sección `#libros` con los tres títulos de autoría, usando el diseño existente.
-  No se añaden fechas, editoriales, ISBN ni enlaces de compra sin confirmar.
+- Sección `#libros` con El reino de un solo habitante, su edición de 2026, ISBN
+  y ASIN; materiales FiloCards y colaboraciones en prensa diferenciados.
+- Recursos educativos: FiloCards, La Voz de la Ética, Mi Brújula de Valores,
+  Tribunal Filosófico y HABLAS: Palabra del Día.
 - Publicaciones académicas (`data/publications.json`), manuscritos
   (`data/working-papers.json`), libros y proyectos educativos diferenciados.
 - `robots.txt` permite el rastreo y anuncia `sitemap.xml`, que incluye la URL
