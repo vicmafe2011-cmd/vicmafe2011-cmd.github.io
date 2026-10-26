@@ -6,6 +6,9 @@
 - `styles.css`
 - `script.js`
 - `data/publications.json`
+- `data/working-papers.json`
+- `robots.txt`
+- `sitemap.xml`
 
 ## Cómo actualizar la web
 
@@ -61,23 +64,16 @@ Este paquete ya incorpora el ORCID:
 - https://orcid.org/0009-0008-2470-1369
 
 
-## Working Papers
+## Manuscritos y trabajos en desarrollo
 
-La sección `Working Papers` se actualiza editando:
+La sección se actualiza editando `data/working-papers.json`.
+El trabajo actual se presenta como **Manuscrito en revisión / Manuscript in revision**,
+con el tipo **Trabajo de investigación en desarrollo / Research work in progress**.
+Mantén sincronizados el JSON, el contenido de respaldo de `script.js` y el de
+`index.html`, en español e inglés.
 
-`data/working-papers.json`
-
-Estados recomendados:
-
-- `En preparación / In preparation`
-- `Manuscrito completado / Completed manuscript`
-- `Preparando envío / Preparing submission`
-- `En evaluación / Under review`
-- `Aceptado, pendiente de publicación / Forthcoming`
-- `Publicado / Published`
-
-No debe utilizarse `Under review` hasta que el manuscrito haya sido enviado formalmente y la revista haya confirmado que está en evaluación.
-
+Los libros y materiales de autor tienen su sección propia. Los manuscritos no se
+incorporan a `data/publications.json` como si fueran artículos publicados.
 
 ## Corrección v2.3
 
@@ -86,13 +82,11 @@ Se ha corregido el orden de inicialización de JavaScript para que la sección
 `data/working-papers.json`.
 
 
-## Actualización v2.4 — envío a SCIO
+## Actualización v2.4 — carga y contenido de respaldo
 
 - El Working Paper aparece directamente en el HTML como contenido de respaldo.
 - `script.js` incluye también los datos de respaldo.
 - `data/working-papers.json` conserva el sistema sencillo de actualización.
-- Estado editorial mostrado:
-  `Enviado a SCIO · Pendiente de evaluación editorial`.
 - Se añadió control de caché para que GitHub Pages muestre antes los cambios.
 
 
@@ -113,14 +107,21 @@ Cambios:
 ## Actualización v2.6 — SEO y autoría
 
 - Título SEO, descripción y Open Graph con la identidad de filósofo, investigador,
-  docente y autor; Schema.org `Person` con ORCID y líneas de investigación.
+  docente, autor y doctorando en Filosofía. Schema.org `Person`, `WebPage` y
+  `Book` relacionan identidad, actividad académica y autoría sin añadir afiliaciones.
+- Doctorado en curso y perfiles académicos con secciones propias; investigación
+  presentada mediante seis áreas generales.
+- Estado del manuscrito actualizado en HTML, JavaScript y JSON. La sección de
+  publicaciones utiliza el texto neutral «Publicaciones académicas en preparación».
 - Sección `#libros` con los tres títulos de autoría, usando el diseño existente.
   No se añaden fechas, editoriales, ISBN ni enlaces de compra sin confirmar.
-- Publicaciones académicas (`data/publications.json`), working papers
+- Publicaciones académicas (`data/publications.json`), manuscritos
   (`data/working-papers.json`), libros y proyectos educativos diferenciados.
 - `robots.txt` permite el rastreo y anuncia `sitemap.xml`, que incluye la URL
   canónica de la página. Las secciones con fragmentos no son páginas adicionales.
 - `styles.css`, `script.js` y los archivos JSON mantienen su funcionamiento.
+- El menú se adapta a la navegación ampliada y permite desplazamiento vertical
+  en pantallas de poca altura.
 
 Para revisar los cambios, sirve la carpeta con un servidor HTTP local y comprueba
 la navegación, el menú móvil, los idiomas ES/EN, los temas y la carga de ambos JSON.

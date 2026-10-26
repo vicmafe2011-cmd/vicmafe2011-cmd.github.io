@@ -67,8 +67,8 @@ function renderPublications() {
   if (!publications.length) {
     container.innerHTML = `
       <div class="empty-state">
-        <p>${currentLang === "es" ? "Todavía no hay publicaciones disponibles." : "No publications are available yet."}</p>
-        <span>${currentLang === "es" ? "Las incorporaremos aquí cuando se publiquen." : "They will be added here once published."}</span>
+        <p>${currentLang === "es" ? "Publicaciones académicas en preparación." : "Academic publications in preparation."}</p>
+        <span>${currentLang === "es" ? "Los libros y los manuscritos cuentan con secciones propias." : "Books and manuscripts have their own sections."}</span>
       </div>`;
     return;
   }
@@ -99,31 +99,27 @@ let workingPapers = [
       en: "Artificial Intelligence, Distributed Cognition and Catholic Social Thought"
     },
     status: {
-      es: "Enviado a SCIO · Pendiente de evaluación editorial",
-      en: "Submitted to SCIO · Awaiting editorial assessment"
+      es: "Manuscrito en revisión",
+      en: "Manuscript in revision"
     },
     type: {
-      es: "Artículo de investigación",
-      en: "Research article"
-    },
-    updated: {
-      es: "Julio de 2026",
-      en: "July 2026"
+      es: "Trabajo de investigación en desarrollo",
+      en: "Research work in progress"
     },
     description: {
-      es: "Análisis filosófico de la externalización cognitiva y de la organización política de las infraestructuras de inteligencia artificial, en diálogo con la antropología filosófica y el pensamiento social cristiano.",
-      en: "A philosophical analysis of cognitive externalization and the political organization of artificial-intelligence infrastructures, in dialogue with philosophical anthropology and Catholic social thought."
+      es: "Trabajo de investigación en desarrollo sobre filosofía de la inteligencia artificial, cognición y pensamiento social cristiano.",
+      en: "Research work in progress on philosophy of artificial intelligence, cognition, and Christian social thought."
     }
   }
 ];
 
 async function loadWorkingPapers() {
   try {
-    const response = await fetch("data/working-papers.json?v=2.4.0", { cache: "no-store" });
+    const response = await fetch("data/working-papers.json?v=2.6.1", { cache: "no-store" });
     if (!response.ok) throw new Error("No se pudo cargar working-papers.json");
     workingPapers = await response.json();
   } catch (error) {
-    console.warn("Se utilizará el contenido integrado de Working Papers.", error);
+    console.warn("Se utilizará el contenido integrado de manuscritos.", error);
   }
   renderWorkingPapers();
 }
@@ -155,7 +151,7 @@ function renderWorkingPapers() {
       <article class="working-paper">
         <div class="working-paper-top">
           <div>
-            <p class="project-tag">WORKING PAPER</p>
+            <p class="project-tag">${currentLang === "es" ? "MANUSCRITO" : "MANUSCRIPT"}</p>
             <h3>${title}</h3>
             ${description ? `<p>${description}</p>` : ""}
           </div>

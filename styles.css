@@ -159,15 +159,19 @@ h3 { font-size: 1.5rem; }
 .site-footer { background: #0d1218; color: #c7ced5; padding: 24px 0; }
 .footer-wrap { display: flex; justify-content: space-between; gap: 20px; font-size: .9rem; }
 
-@media (max-width: 920px) {
+@media (max-width: 1100px) {
   .brand-name { display: none; }
   .menu-button { display: inline-flex; }
   .main-nav {
     display: none; position: absolute; top: 76px; left: 20px; right: 20px;
     flex-direction: column; align-items: stretch; padding: 18px;
     background: var(--surface); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow);
+    max-height: calc(100dvh - 96px); overflow-y: auto;
   }
   .main-nav.open { display: flex; }
+}
+
+@media (max-width: 920px) {
   .hero-grid, .intro-grid, .contact-grid, .section-heading { grid-template-columns: 1fr; gap: 34px; }
   .research-grid { grid-template-columns: 1fr; }
   .research-card.featured { grid-row: auto; min-height: 330px; }
