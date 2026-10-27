@@ -76,7 +76,6 @@ function applyLanguage(lang) {
   updateControlLabels();
   savePreference("preferredLanguage", currentLang);
   renderPublications();
-  renderWorkingPapers();
 }
 
 langToggle?.addEventListener("click", () => {
@@ -116,8 +115,8 @@ function renderPublications() {
   if (!publications.length) {
     container.innerHTML = `
       <div class="empty-state">
-        <p>${currentLang === "es" ? "Publicaciones académicas en preparación." : "Academic publications in preparation."}</p>
-        <span>${currentLang === "es" ? "Los libros y los manuscritos cuentan con secciones propias." : "Books and manuscripts have their own sections."}</span>
+        <p>${currentLang === "es" ? "No hay artículos académicos publicados disponibles." : "No published academic articles are available."}</p>
+        <span>${currentLang === "es" ? "Los libros cuentan con una sección propia." : "Books have their own section."}</span>
       </div>`;
     return;
   }
@@ -141,79 +140,5 @@ function renderPublications() {
   }).join("");
 }
 
-let workingPapers = [
-  {
-    title: {
-      es: "Inteligencia artificial, cognición distribuida y pensamiento social cristiano",
-      en: "Artificial Intelligence, Distributed Cognition and Catholic Social Thought"
-    },
-    status: {
-      es: "Manuscrito en revisión",
-      en: "Manuscript in revision"
-    },
-    type: {
-      es: "Trabajo de investigación en desarrollo",
-      en: "Research work in progress"
-    },
-    description: {
-      es: "Trabajo de investigación en desarrollo sobre filosofía de la inteligencia artificial, cognición y pensamiento social cristiano.",
-      en: "Research work in progress on philosophy of artificial intelligence, cognition, and Christian social thought."
-    }
-  }
-];
-
-async function loadWorkingPapers() {
-  try {
-    const response = await fetch("data/working-papers.json?v=2.6.1", { cache: "no-store" });
-    if (!response.ok) throw new Error("No se pudo cargar working-papers.json");
-    workingPapers = await response.json();
-  } catch (error) {
-    console.warn("Se utilizará el contenido integrado de manuscritos.", error);
-  }
-  renderWorkingPapers();
-}
-
-function renderWorkingPapers() {
-  const container = document.getElementById("working-papers-list");
-  if (!container) return;
-
-  if (!workingPapers.length) {
-    container.innerHTML = `
-      <div class="empty-state">
-        <p>${currentLang === "es"
-          ? "No hay trabajos en curso disponibles."
-          : "No working papers are currently available."}</p>
-      </div>`;
-    return;
-  }
-
-  container.innerHTML = workingPapers.map(item => {
-    const title = item.title?.[currentLang] || item.title?.es || "";
-    const description = item.description?.[currentLang] || item.description?.es || "";
-    const status = item.status?.[currentLang] || item.status?.es || "";
-    const type = item.type?.[currentLang] || item.type?.es || "";
-    const updated = item.updated?.[currentLang] || item.updated?.es || "";
-    const updatedLabel = currentLang === "es" ? "Actualizado" : "Updated";
-    const typeLabel = currentLang === "es" ? "Tipo" : "Type";
-
-    return `
-      <article class="working-paper">
-        <div class="working-paper-top">
-          <div>
-            <p class="project-tag">${currentLang === "es" ? "MANUSCRITO" : "MANUSCRIPT"}</p>
-            <h3>${title}</h3>
-            ${description ? `<p>${description}</p>` : ""}
-          </div>
-          <span class="status-badge">${status}</span>
-        </div>
-        <div class="working-paper-meta">
-          ${type ? `<span><strong>${typeLabel}:</strong> ${type}</span>` : ""}
-          ${updated ? `<span><strong>${updatedLabel}:</strong> ${updated}</span>` : ""}
-        </div>
-      </article>`;
-  }).join("");
-}
-
 applyLanguage(currentLang);
 loadPublications();
-loadWorkingPapers();
